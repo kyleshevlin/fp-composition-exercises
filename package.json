@@ -1,0 +1,12 @@
+{
+  "name": "fp-checkout",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "accounting": "^0.4.1"
+  }
+}
