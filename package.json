@@ -4,9 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "jest"
   },
   "dependencies": {
     "accounting": "^0.4.1"
+  },
+  "devDependencies": {
+    "jest": "^21.2.1"
   }
 }

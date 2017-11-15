@@ -18,31 +18,31 @@ const last = arr => arr[arr.length - 1]
 // Some Books
 const BOOKS = [
   {
-    name: '1984',
+    title: '1984',
     author: 'George Orwell',
     dollarValue: 5,
     inStock: true
   },
   {
-    name: 'War and Peace',
+    title: 'War and Peace',
     author: 'Leo Tolstoy',
     dollarValue: 18,
     inStock: true
   },
   {
-    name: 'The Catcher in the Rye',
+    title: 'The Catcher in the Rye',
     author: 'J.D. Salinger',
     dollarValue: 6,
     inStock: false
   },
   {
-    name: 'Brave New World',
+    title: 'Brave New World',
     author: 'Aldous Huxley',
     dollarValue: 9,
     inStock: true
   },
   {
-    name: 'The Time Machine',
+    title: 'The Time Machine',
     author: 'H.G. Wells',
     dollarValue: 12,
     inStock: false
@@ -58,12 +58,10 @@ const lastInStock = function(books) {
 console.log('Exercise 1:', lastInStock(BOOKS))
 
 
-
 // Exercise 2 - use compose, prop, and first to get the name of the first book
-const nameOfFirstBook = () => {}
+const titleOfFirstBook = () => {}
 
-console.log('Exercise 2:', nameOfFirstBook(BOOKS))
-
+console.log('Exercise 2:', titleOfFirstBook(BOOKS))
 
 
 
@@ -101,6 +99,7 @@ const sanitizeNames = () => {}
 console.log('Exercise 5:', sanitizeNames(BOOKS))
 
 
+
 // Exercise 6 - Refactor availablePrices() with compose
 
 const availablePrices = function(books) {
@@ -113,3 +112,14 @@ const availablePrices = function(books) {
 }
 
 console.log('Exercise 6:', availablePrices(BOOKS))
+
+
+module.exports = {
+  BOOKS,
+  lastInStock,
+  titleOfFirstBook,
+  lessThanTen,
+  averageDollarValue,
+  sanitizeNames,
+  availablePrices
+}
