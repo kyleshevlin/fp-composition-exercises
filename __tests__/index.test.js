@@ -17,26 +17,7 @@ test('titleOfFirstBook', () => {
 })
 
 test('lessThanTen', () => {
-  const expected = [
-    {
-      title: '1984',
-      author: 'George Orwell',
-      dollarValue: 5,
-      inStock: true
-    },
-    {
-      title: 'The Catcher in the Rye',
-      author: 'J.D. Salinger',
-      dollarValue: 6,
-      inStock: false
-    },
-    {
-      title: 'Brave New World',
-      author: 'Aldous Huxley',
-      dollarValue: 9,
-      inStock: true
-    }
-  ]
+  const expected = [5, 6, 9]
 
   expect(lessThanTen(BOOKS)).toEqual(expected)
 })

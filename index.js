@@ -11,7 +11,7 @@ const compose = (...fns) => x => fns.reduceRight((val, fn) => fn(val), x)
 const map = fn => arr => arr.map(fn)
 const filter = fn => arr => arr.filter(fn)
 const reduce = fn => acc => arr => arr.reduce(fn, acc)
-const prop = name => obj => obj[name]
+const prop = key => obj => obj[key]
 const first = arr => arr[0]
 const last = arr => arr[arr.length - 1]
 
@@ -58,14 +58,14 @@ const lastInStock = function(books) {
 console.log('Exercise 1:', lastInStock(BOOKS))
 
 
-// Exercise 2 - use compose, prop, and first to get the name of the first book
+// Exercise 2 - use compose, prop, and first to get the title of the first book
 const titleOfFirstBook = () => {}
 
 console.log('Exercise 2:', titleOfFirstBook(BOOKS))
 
 
 
-// Exercise 3 - use compose, prop, map, and filter to return all the books that cost less than 10
+// Exercise 3 - use compose, prop, map, and filter to return all the dollarValues less than 10
 
 const lessThanTen = () => {}
 
